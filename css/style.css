@@ -77,7 +77,7 @@ input[type="button"]{
   height:30px; width: 30px;
     margin-top:11px;
   margin-bottom:11px;
-  background-image: url('//ssl.gstatic.com/gb/images/v1_ab71ffe9.png');
+  background-image: url(https://ssl.gstatic.com/gb/images/v1_ab71ffe9.png);
   background-position: -345px 0px;
   opacity:.55;
 }
