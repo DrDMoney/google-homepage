@@ -1,151 +1,223 @@
-#header{
-  position: relative;
-  height: 100px; width:100%;
-  min-width: 400px;
-  margin: 10px 20px auto auto;
-  
-}
-.navi{
-  float: right;
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+body{
+		margin: 0; padding: 0;
+		font-family: arial,sans-serif;
+		font-size: 13px;
+		height: 100%;
+		text-decoration-color: rgb(102, 102, 102);
+		color: #666;
 }
 
-.navi li{
-  margin-left:10px;
-  margin-right:10px;
-
-  margin-top:17px;
-  margin-bottom:17px;
-  float:left;
-  text-align: -webkit-center;
+#container{
+	height: 100%;
+	margin:0; padding: 0;
+	min-width: 620px;
+	display: block;
 }
 
-#main {
-  height: 500px;
-  margin:top;
-  margin: 0; padding: 0;
- 
+.header{
+	width: 100%;
+	display: block;
+	margin-top: 15px;
+	height: 30px;
+	top: 0;
+	vertical-align: middle;
 }
-#content{
-  postion:relative;
-  margin:auto;
-  width: 500px;
-  display: block;
-}
-.form_style{
-  margin:15px auto;
-  position: relative;
-}
-.search{
-  position: relative;
+
+#navi{
+	position: absolute;
+	right:0;
+	display: inline-block;
+	padding-bottom:7px;
+	vertical-align: middle;
 
 }
-#search_box {
-  padding: 5px 30px 5px 10px;
-  width: 460px;
-  height: 20px;
-  font: 16px arial,sans-serif;
-  z-index: -1;
+
+.headin{
+	display: inline-block;
+	position: relative;
+	line-height: 30px;
+	vertical-align: middle;
+	margin-left: 15px;
 }
+
+#apps, #notifi{
+	background-image: url("img/i1_1967ca6a.png");
+	background-size: 528px 68px;
+	width: 30px; height: 30px;
+}
+#apps{background-position: -132px -38px;}
+
+#notifi{background-position: -311px -39px;}
+
+
+.app_drawer_outer{
+	z-index: 10;
+	background-color: white;
+	display: none;
+	border: 1px solid #ccc;
+	border-color: rgba(0,0,0,.2);
+	height: 496px; width: 320px;
+	position: absolute;
+	right: 0;
+	top:44px;
+	box-shadow: 0 2px 10px rgba(0,0,0,.2);
+	margin-right: 35px;
+}
+
+.app_drawer_inter{
+	position: relative;
+	overflow-y: auto;
+	overflow: hidden;
+	margin: 29px 26px 29px 27px;
+	height: 400px; width: 265px;
+}
+
+.app_icons_top{
+	padding: 0; margin:0;
+}
+.app_icons{
+
+	padding: 0; margin:
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 84px;height:100px;
+}
+
+.iconimg{
+	margin: 0px 0px 0px 10px;
+	display: block;
+	width:64px;  height: 64px;
+	background-image: url('img/p1_a4541be8.png');
+	background-size: 64px 2065px;
+}
+.icontext{
+	text-align: center;
+
+	padding-top: 5px;
+	line-height: 0;
+
+}
+
+#myaccount{background-position: 0px -1449px;}
+#googlesearch{background-position: 0px -276px;}
+#maps{background-position: 0px -69px;}
+#youtube{background-position: 0px -138px;}
+#play{background-position: 0px -1380px;}
+#news{background-position: 0px -1311px;}
+#gmail{background-position: 0px -621px;}
+#drive{background-position: 0px -1518px;}
+#calendar{background-position: 0px -1794px;}
+#googleplus{background-position: 0px -897px;}
+#translate{background-position: 0px -1587px;}
+#photos{background-position: 0px -345px;}
+
+
+
+
+
+
+
+
+
+
+
+
+.show{display: block;}
+
+.main{
+	position: relative;
+	display: block;
+	top: 198px;
+	height: auto;
+	width: 100%;
+	padding-bottom: 40px;
+}
+
+#glogo{padding-bottom: 24px;}
+
+.search_area{
+	height: 33px; max-width:566px; min-width:300px;
+	border: 1px solid #d9d9d9;
+	padding: 5px 9px 0px 9px;
+	margin-top: 3px;
+	margin-bottom: 2px;
+	position:relative;
+
+}
+
+.search_area: hover{
+	border: 1px solid #b9b9b9;
+	border top color: #a0a0a0;
+}
+
+
+#search_box, #serach_box:focus{
+	outline: none;
+	height: 26px; width: 540px; line-height: 26px;
+	float: left;
+	border-style: none;
+}
+
 #mic{
-  position: absolute;
-  height: 20px;
-  margin: 5px;
-  top: 2px;
-  left: 475px;
-}
-.buttons {
-  top: 100px;
-  display:block;
-  text-align: -webkit-center;
-  
-}
-input[type="button"]{
-  height:29px;
-  line-height:27px;
-  background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
-  border: 1px solid rgba(0,0,0,0.1);
-  border-radius: 2px;
-  padding: 0 8px;
-  margin: 13px 9px;
-  
+	height: 78%;
+	position: relative;
+	top: 2px;
+	float: right;
 }
 
-#apps{
-  height:30px; width: 30px;
-    margin-top:11px;
-  margin-bottom:11px;
-  background-image: url(https://ssl.gstatic.com/gb/images/v1_ab71ffe9.png);
-  background-position: -345px 0px;
-  opacity:.55;
-}
-#apps:hover, #apps:focus{
-  opacity:1;
+.button_area{
+	padding-top: 18px;
+	min-width:300px;
+	display: inline-flex;
 }
 
-#notifi{
-  height:20px; width: 20px;
-  margin-top:16px;
-  margin-bottom:16px;
-  
-  background-image: url(https://ssl.gstatic.com/gb/images/v1_ab71ffe9.png);
-  background-position: -276px -164px;
-  opacity:.55;
-  background-color: rgba(0,0,0,.55);
-  border-radius:50%;
-  text-align: center;
-}
-#notifi:hover, #notifi:focus{
-  background-color: rgba(0,0,0,1);
+.buttons{
+	height: 36px;
+    line-height: 27px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+
 }
 
-#user_img{
-  height:32px; width: 32px;
-  margin: 10px;
-  border-radius:50%;
-  background-image: url(https://lh4.googleusercontent.com/-B8x96If_iXc/AAAAAAAAAAI/AAAAAAAAAAA/4nR1CXlQUf8/s32-c/photo.jpg)
+
+.footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	min-width: 500px;
+	padding-bottom: 8px; padding-top: 7px;
+	background: #f2f2f2;
+	border-top:1px solid #e4e4e4;
+	height: 35px;
+}
+.feet{
+	position: absolute;
+	vertical-align: middle;
+	padding:5px;
 }
 
-#footer{
-  left:0; right:0; bottom:0;
-  display:block;
-  position:absolute;
-  
-  height:40px; width:100%;
-  min-width:600px;
-  background: #E0E0E0;
-  border-top: 1px solid rgb(202, 202, 202);
-  
-  
-}
-#footer li{
-  list-style-type: none;
-  margin: 10px 20px 0 0;
-
-  float:left;
-}
-
-#footer ul{
-  
-  padding:0 40px 0 40px;
-  margin: 0 0 0 0;
-  
+#footer_left{
+	left: 0;
+	padding-left: 15px;
 }
 #footer_right{
-  position: absolute;
-  right:0;
+	right: 0;
+	padding-right: 15px;
 }
-#footer_left{
-  position: absolute;
-  left:0;
+ .footin{
+	display: inline;
+	line-height: 30px;
+	vertical-align: middle;
+	margin-left: 15px;
 }
-
-body, td, a, p, .h {
-  font-family: arial,sans-serif;
-
-
-
-
-
